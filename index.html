@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="logo.png" 
+            alt="Logo" 
+            class="size">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Andrew Dejito</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="schedule.html" onclick="toggleMenu()">Schedule</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="pic-container">
+            <img src="profile-pic.png" alt="Profile Picture"/>
+        </div>
+        <div class="text">
+            <p class="text1">Hi, I'm</p>
+            <h1 class="name">Andrew Dejito</h1>
+            <p class="text2">a Programmer.</p>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2"
+                    onclick="location.href='https://www.github.com/andrewdejito'"
+                >
+                    <img src="github.png" 
+                    alt="LinkedIn Profile" 
+                    class="icon">
+                Github
+                </button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='https://www.linkedin.com/in/andrew-dejito-12125528b/'">
+                    <img src="linked-in.png" 
+                    alt="LinkedIn Profile" 
+                    class="icon" >
+                LinkedIn
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>3 years <br />Java Programming</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Bachelor of Science in <br> Computer Science</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Welcome to my portfolio! I am a dedicated STEM enthusiast with a solid foundation 
+                in computer programming and web technologies. My journey began in senior high with 
+                Java programming, continued through college with advanced Java courses, and expanded 
+                into web development with HTML, CSS, and JavaScript. This portfolio showcases my 
+                projects, highlighting my skills in software development and front-end design. 
+                Explore my work to see my dedication and expertise in action. Thank you for visiting!
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">PnC</p>
+        <h1 class="title">Mission & Vision</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Mission</h2>
+              <div class="text-container">
+                <p><i>As an institution of higher learning, UC (PnC) is committed to equip 
+                  individuals with knowledge, skills, and values that will enable them to 
+                  achieve their professional goals & provide leadership and service for 
+                  national development.</i></p>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Vision</h2>
+              <div class="text-container">
+                <p><i>A premier institution of higher learning in Region IV, developing 
+                  globally-competitive and value-laden professionals and leaders instrumental 
+                  to community development and nation-building</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#activities'"/>
+      </section>
+      <section id="activities">
+        <p class="section__text__p1">Browse My Web Technologies</p>
+        <h1 class="title">Activities</h1>
+        <div class="carousel-container">
+          <button class="carousel-button prev">‹</button>
+          <div class="carousel">
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="prelim-1.PNG"
+                      alt="Lab Exam"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Prelim: Laboratory Exam</h2>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="midterm-1.PNG"
+                      alt="Home Page"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Midterm: Home Page</h2>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="midterm-2.PNG"
+                      alt="Ikigai"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Midterm: Ikigai</h2>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="midterm-3.PNG"
+                      alt="Creating Tables"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Midterm: Creating Tables</h2>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="midterm-4.PNG"
+                      alt="Recitation"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Midterm: Recitation</h2>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="finals-1.PNG"
+                      alt="Wireframe"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Finals: Wireframe</h2>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="finals-2.PNG"
+                      alt="Ecommerce"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Finals: eCommerce</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-button next">›</button>
+        </div>
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="project-1.png"
+                  alt="Artisanal Avenue"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Ecommerce: ArtisanalAvenue</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://andrewdejito.github.io/ecommerce.github.io/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="project-2.png"
+                  alt="Java Music Player"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Java Swing Music Player</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="project-3.png"
+                  alt="Figma Design"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Website Prototype</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#video'"
+        />
+      </section>
+      <section id="video">
+        <p class="section__text__p1">Look into My</p>
+        <h1 class="title">Ecommerce Video Presentation</h1>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a href="https://drive.google.com/file/d/1-aiDsWb67cQL9kaOch2JgPagxPJ_9nwh/view?usp=drive_link"><video
+                controls src="video.mp4"
+                alt="Ecommerce Video"
+                class="project-vid" width="700px"></a>
+            </div>
+            <h2 class="experience-sub-title project-title">Artisanal Avenue</h2>
+          </div>
+        </div>
+        <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#contact'"/>
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:dejito.andrew@gmail.com">dejito.andrew@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Andrew Dejito. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
